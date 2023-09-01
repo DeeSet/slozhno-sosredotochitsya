@@ -44,16 +44,16 @@ a {
 
 button {
   padding: 0;
-  border: none;
   background-color: transparent;
-}
-
-button:hover {
-  border: 1px solid var(--hover-color, rgba(255, 0, 112, 0.4));
+  border: none;
 }
 
 button:focus {
   outline: none;
+}
+
+button:hover {
+  border: 1px solid var(--hover-color, rgba(255, 0, 112, 0.3));
 }
 
 button:focus-visible {
