@@ -48,7 +48,7 @@
     --title-color: #ffc2e6;
     --title-shadow: #ff0070;
     --hover-color: rgba(50, 49, 45, 0.4);
-    --bg-image: url(../images/cover-image-light.png);;/
+    --bg-image: url(../images/cover-image-light.png);;
   }
 
   .theme_auto .content__text-block-title {
