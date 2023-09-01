@@ -117,6 +117,10 @@
   margin-block-end: 10px;
 }
 
+.margin-l {
+  margin-block-end: 20px;
+}
+
 .unbold {
   font-weight: normal;
 }
@@ -138,24 +142,24 @@
 .image {
   object-fit: cover;
   object-position: center;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .footer {
   min-height: 100vh;
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .footer__title {
   color: var(--title-color, #db00ff);
   text-shadow: 2px 2px 0px var(--title-shadow, #ff0070);
-  font-size: clamp(7.25rem, 7.0110rem + 1.0180vw, 7.5rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
-  line-height: 82%;
+  line-height: 82.5%;
 }
 
 @media (width >= 768px) {
@@ -165,7 +169,7 @@
   }
 
   .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4530vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
   }
 
@@ -178,10 +182,6 @@
     padding: 0 20px;
   }
 
-  .content__title_cloumn-three {
-    max-inline-size: calc((100% - 40px) / 3);
-  }
-
   .content__section {
     margin-block-end: 80px;
   }
@@ -192,8 +192,16 @@
     grid-template-columns: 1fr 2fr;
   }
 
+  .content__title_cloumn-three {
+    max-inline-size: calc((100% - 40px) / 3);
+  }
+
   .gallery {
     margin-block-end: 60px;
+  }
+
+  .gallery .content__text-block-title {
+    margin-block-end: 20px;
   }
 
   .gallery__grid {
@@ -201,11 +209,6 @@
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1.2fr 1.65fr;
-  }
-
-
-  .gallery .content__text-block-title {
-    margin-block-end: 20px;
   }
 
   .image:nth-child(1) {
@@ -234,12 +237,7 @@
   }
 
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4530vw, 9.8125rem);
-  }
-
-  .header__decorative-element {
-    inset-inline-end: 48px;
-    inset-block-start: 20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .decorated-zone::before {
@@ -250,6 +248,11 @@
   .decorated-zone::after {
     inset-block-end: 20px;
     inset-inline-start: 20px;
+  }
+
+  .header__decorative-element {
+    inset-inline-end: 48px;
+    inset-block-start: 21px;
   }
 }
 
@@ -269,7 +272,7 @@
 
   .content__section_column-three {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
