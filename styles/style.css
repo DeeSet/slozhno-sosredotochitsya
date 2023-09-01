@@ -263,11 +263,11 @@
     flex-direction: row;
   }
 
-  .content__section_two {
+  .content__section_column-two {
     gap: 10px;
   }
 
-  .content__section_three {
+  .content__section_column-three {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
