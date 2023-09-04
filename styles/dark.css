@@ -15,5 +15,6 @@
   --accent-color: #ff0070;
   --bg-color: #000028;
   --title-color: #db00ff;
+  --hover-color: rgba(189, 58, 102, 0.4);
   --bg-image: url(../images/cover-image-dark.png);
 }
