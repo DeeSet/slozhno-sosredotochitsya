@@ -12,11 +12,10 @@
   --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
   --text-color: #353430;
-  --title-shadow: #ff0070;
   --hover-color: rgba(50, 49, 45, 0.4);
   --decorative-color: #353430;
   --title-color: #ffc2e6;
-  --bg-image: url(../images/cover-image-light.png);;
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 .theme_light .header__decorative-element {
@@ -46,9 +45,8 @@
     --accent-color: #ff8dcb;
     --decorative-color: #353430;
     --title-color: #ffc2e6;
-    --title-shadow: #ff0070;
     --hover-color: rgba(50, 49, 45, 0.4);
-    --bg-image: url(../images/cover-image-light.png);;
+    --bg-image: url(../images/cover-image-light.png);
   }
 
   .theme_auto .content__text-block-title {
@@ -66,4 +64,26 @@
 .theme_auto .content__title {
   color: var(--text-color, #353430);
 }
+}
+
+@media (width >= 375px) {
+  :root,
+  .page.theme_light {
+    --title-shadow: rgba(255, 0, 112, 0.4);
+    
+  }
+}
+
+@media (width >= 768px) {
+  :root,
+  .page.theme_light {
+    --title-shadow: rgba(255, 0, 112, 0.4);
+  }
+}
+
+@media (width >= 1024px) {
+  :root,
+  .page.theme_light {
+    --title-shadow: #ff0070;
+  }
 }
